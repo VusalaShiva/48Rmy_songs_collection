@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiva Song Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .child {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        audio {
+            width: 300px;
+        }
+
+        a img {
+            transition: transform 0.3s ease;
+        }
+
+        a img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎵 Song Gallery</h1>
+
+    <div class="child">
+        <img src="./images/Anaganaga-3.jpg" width="450px" alt="Anaganaga Poster">
+        <img src="./images/maxresdefault.jpg" width="450px" alt="Maxres Poster">
+        <img src="./images/subham.jpg" width="450px" alt="Subham Poster">
+    </div>
+
+    <h2>🎧 Listen to Songs</h2>
+    <div class="child">
+        <audio controls>
+            <source src="./songs/[iSongs.info] 03 - Chudu Chudu.mp3" type="audio/mpeg">
+        </audio>
+        <audio controls>
+            <source src="./songs/[iSongs.info] 01 - Hungry Cheetah OG Glimpse.mp3" type="audio/mpeg">
+        </audio>
+        <audio controls>
+            <source src="./songs/[iSongs.info] 05 - Janma Janmala Bandham (The Clock Strikes 9).mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <h2>⬇️ Download Songs</h2>
+    <div class="child">
+        <a href="./songs/[iSongs.info] 03 - Chudu Chudu.mp3" download = "Chudu Chudu">
+            <img src="./download_ion/download_icon.png" width="100px" alt="Download Chudu Chudu">
+        </a>
+        <a href="./songs/[iSongs.info] 01 - Hungry Cheetah OG Glimpse.mp3" download = "Hungry Cheetah OG Glimpse">
+            <img src="./download_ion/download_icon.png" width="100px" alt="Download Hungry Cheetah">
+        </a>
+        <a href="./songs/[iSongs.info] 05 - Janma Janmala Bandham (The Clock Strikes 9).mp3" download = "Janma Janmala Bandham">
+            <img src="./download_ion/download_icon.png" width="100px" alt="Download Janma Janmala Bandham">
+        </a>
+    </div>
+
+    <footer>
+        <p>My Song Collection 2025</p>
+    </footer>
+</body>
+</html>
